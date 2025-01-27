@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1a (Form)</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+    <header>
+    <nav aria-labelledby="primary navigation">
+     <ul>
+        <li>
+          <a href="index.html">          <i class="fa-solid fa-circle-arrow-left"></i> Home</a>
+        </li>
+     </ul>
+    </nav>    
+    </header>
+    <div class="title">
+      <h1>Sign Up</h1>
+      <p>Take the next steps to apply at <a href="https://altschoolafrica.com/" class="terms">AltSchool Africa!!</a></p>
+    </div>
+    <div id="contact" class="container">
+         
+        <div class="col">
+                <div class="input-box">
+                  <label for="firstName">FirstName:</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder="Jane"
+                    autocomplete="Enter Firstname"
+                    required
+                    autofocus
+                    id="firstName"
+                  />
+                </div>
+                <div class="input-box">
+                  <label for="LastName">LastName:</label>
+                  <input
+                    type="text"
+                    name="LastName"
+                    placeholder="Enter LastName"
+                    autocomplete="on"
+                    required
+                    id="lastName"
+                  />
+                </div>
+                <div class="input-box">
+                    <label for="Gender">Gender:</label>
+                    <input type="text" name="gender" id="gender" list="gender-list" placeholder="Select Gender"/>
+                    <datalist id="gender-list">
+                      <option value="male"></option>
+                      <option value="female"></option>
+                      <option value="other"></option>
+                    </datalist>
+                </div>
+                <div class="input-box">
+                    <label for="Birth">Date of Birth:</label>
+                    <input
+                      type="date"
+                      name="Birth"
+                      placeholder="YYYY-MM-DD"
+                      autocomplete="on"
+                      required
+                      id="Birth"
+                    />
+                </div>
+                  <div class="input-box">
+                    <label for="Email">Email Address:</label>
+                    <input
+                      type="text"
+                      name="Email"
+                      placeholder="Enter email address"
+                      autocomplete="on"
+                      required
+                      id="email"
+                    />
+                  </div>
+                  <div class="input-box">
+                    <label for="Phone">Phone Number:</label>
+                    <input
+                      type="number"
+                      name="Phone"
+                      placeholder="0000-000-0000"
+                      required
+                      id="Phone"
+                      pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                    />
+                  </div>
+                  <div class="input-box">
+                    <label for="country">Country:</label>
+                    <input type="text" name="country" id="country" list="Country-list" placeholder="Select Country"/>
+                    <datalist id="country-list">
+                      <option value="Algeria"></option>
+                      <option value="Belgium"></option>
+                      <option value="Canada"></option>
+                      <option value="Denmark"></option>
+                      <option value="El Salvador"></option>
+                      <option value="France"></option>
+                      <option value="Ghana"></option>
+                      <option value="Hawaii"></option>
+                      <option value="India"></option>
+                      <option value="Japan"></option>
+                      <option value="Korea"></option>
+                      <option value="Laos"></option>
+                      <option value="Mozambique"></option>
+                      <option value="Nigeria"></option>
+                      <option value="Oman"></option>
+                      <option value="Panama"></option>
+                      <option value="Qatar"></option>
+                      <option value="Rwanda"></option>
+                      <option value="South Africa"></option>
+                      <option value="Thailand"></option>
+                      <option value="Uganda"></option>
+                      <option value="Venezuela"></option>
+                      <option value="Wales"></option>
+                      <option value="Yemen"></option>
+                      <option value="Zambia"></option>
+                    </datalist>
+                  </div>
+                  <div class="input-box ">
+                    <label for="Residence">State/City of Residence:</label>
+                    <input
+                      type="text"
+                      name="Residence"
+                      placeholder="Enter your state of residence"
+                      autocomplete="on"
+                      required
+                      id="Residence"
+                    />
+                  </div>
+                  <div class="input-box">
+                    <label for="Password">Password:</label>
+                    <input
+                      type="password"
+                      name="Password"
+                      placeholder="Your secret"
+                      required
+                      id="Password"
+                    />
+                  </div>
+                  <div class="input-box">
+                      <label for="">confirm-Password:</label>
+                      <input
+                        type="password"
+                        name="password"
+                        placeholder="Your secret"
+                        required
+                        id="password"
+                      />
+                  </div>
+              </div>
+                <div class="input-bos">
+                  <label for="channel">How did you hear about Us?:</label>
+                  <input type="text" name="channel" id="chnannel" list="channel" placeholder="Optional: Let us know how you found us"/>
+                </div>
+                <div class="tems">By clicking continue, I agree to <a href="https://altschoolafrica.com/" class="tem">Terms of Use</a>  and acknowledge that I have read the <a href="https://altschoolafrica.com/" class="tem"> Privacy Policy.</a></div>
+              <button>Sign Up <i class="fa-solid fa-circle-arrow-right"></i></button> 
+      </div>
+
+
+          <footer>
+            <p>
+                &lt;&lt;&lt; &copy;
+                <a href="index.html">DevBytes</a>
+                &gt;&gt;&gt;
+              </p>
+          </footer>
+</body>
+</html>
